@@ -33,7 +33,7 @@ function removeByValue(arr, val) {
    }
  }
  
- //sleep
+ //Sleep
  function Sleep(delay){
 	 var start=(new Date()).getTime();
 	 while((new Date()).getTime() - start < delay){
