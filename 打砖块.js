@@ -205,12 +205,6 @@ function Crash()
 		var i=arr_rest[k];
 		BR=$('br'+i,0);
 		if(arr_crash.indexOf(i)<0){
-			if(!($('ball',0).offsetTop>BR.offsetTop+28) && !($('ball',0).offsetTop+20<BR.offsetTop) && !($('ball',0).offsetLeft+20<BR.offsetLeft) && !($('ball',0).offsetLeft>BR.offsetLeft+38)){
-				
-				$('main',0).removeChild(BR);
-				arr_crash.push(i);
-				Sub();
-			}
 			//向上击
 			if(BALL.offsetTop<BR.offsetTop+28 && BALL.offsetTop>BR.offsetTop && BALL.offsetLeft+10>BR.offsetLeft && BALL.offsetLeft+10<BR.offsetLeft+38){
 				y_ball=600-BR.offsetTop-28-20+1;
